@@ -1,1 +1,41 @@
+#include<iostream>
+using namespace std;
+int cociente(int);
+int resto(int);
+int main(){
+	int num1,num2,ma,me,r,q;
+	cin>>num1;
+	cin>>num2;
+	if(num1>num2){
+		ma=num1;
+		me=num2;
+	}
+	if(num2>num1){
+	    ma=num2;
+		me=num1;	
+	}
+	q=cociente(q);
+	r=resto(r);
+	cout<<"La division sera: "<<ma<<" / "<<me<<endl;
+	cout<<"Su cociente es: "<<q<<endl;
+	cout<<"Su resto es: "<<r<<endl;
+	return 0;
+}
+int cociente(int m){
+	int q,r,ma,me;
+	q=0;
+	r=ma;
+	for(r=ma;r>=me;q++){
+		r=r-me;
+	}
+	return q;
+}
+int resto(int n){
+	int r,ma, me;
+	r=ma;
+	while(r>=me){
+		r=r-me;
+	}
+	return r;
+}
 
