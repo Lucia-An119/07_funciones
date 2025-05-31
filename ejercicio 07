@@ -8,7 +8,7 @@ int main(){
     cout<<"Ibgrese valor de n: ";
     cin>>n;
     c=factorial(m)/(factorial(n)*factorial(m-n));
-    cout<<c;
+    cout<<"El valor de la operación es: "<<c<<endl;
 return 0;
 }
 int factorial (int n){
@@ -17,4 +17,3 @@ int factorial (int n){
         f=f*i;
     return f;
 }
-
