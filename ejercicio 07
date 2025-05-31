@@ -3,7 +3,10 @@ using namespace std;
 int factorial(int);//prototipo
 int main(){
     int m,n,c;
-    cin>>m>>n;
+    cout<<"Ingrese valor de m: ";
+    cin>>m;
+    cout<<"Ibgrese valor de n: ";
+    cin>>n;
     c=factorial(m)/(factorial(n)*factorial(m-n));
     cout<<c;
 return 0;
