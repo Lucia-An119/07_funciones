@@ -5,6 +5,10 @@ int main() {
     int cant,suma;
     cout<<"ingrese la cantidad de valores para la serie: ";
     cin>>cant;
+    if (cant <= 0) {
+        cout << "Por favor, ingrese un número mayor que cero." << endl;
+        return 1;
+    }
     suma = generarFibonacci(cant);
     cout << "Suma de la serie: " << suma << endl;
 
