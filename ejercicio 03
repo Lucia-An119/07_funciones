@@ -3,6 +3,7 @@ using namespace std;
 int generarFibonacci(int cant);
 int main() {
     int cant,suma;
+    cout<<"ingrese la cantidad de valores para la serie: ";
     cin>>cant;
     suma = generarFibonacci(cant);
     cout << "Suma de la serie: " << suma << endl;
@@ -11,9 +12,10 @@ int main() {
 }
 int generarFibonacci(int cant) {
     int a,b,suma,i,s;
-	a= 0;
-	b= 1; 
-	suma= 0;
+    a= 0;
+    b= 1; 
+    suma= 0;
+    cout<<"-------------------------------------"<<endl;
     cout << "Serie de Fibonacci: ";
     for(i = 0; i < cant; ++i){
         suma=suma+a,
