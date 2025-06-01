@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+int generarFibonacci(int cant);
+int main() {
+    int cant,suma;
+    cin>>cant;
+    suma = generarFibonacci(cant);
+    cout << "Suma de la serie: " << suma << endl;
+
+    return 0;
+}
+int generarFibonacci(int cant) {
+    int a,b,suma,i,s;
+	a= 0;
+	b= 1; 
+	suma= 0;
+    cout << "Serie de Fibonacci: ";
+    for(i = 0; i < cant; ++i){
+        suma=suma+a,
+        cout << a << " ";
+        s=a+b;
+        a=b;
+        b=s;
+    }
+    cout << endl;
+    return suma;
+}
