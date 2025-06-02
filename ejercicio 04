@@ -3,7 +3,9 @@ using namespace std;
 int NumeroPerfecto(int n);
 int main() {
     int numero;
+    cout << "Ingrese un numero entero: ";
     cin >> numero;
+    cout<< "--------------------------------- ";
     if(NumeroPerfecto(numero)){
         cout <<numero<< " es un numero perfecto." <<endl;
     } else {
