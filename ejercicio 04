@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int NumeroPerfecto(int n);
+int main() {
+    int numero;
+    cin >> numero;
+    if(NumeroPerfecto(numero)){
+        cout <<numero<< " es un numero perfecto." <<endl;
+    } else {
+        cout <<numero<< " no es un numero perfecto." <<endl;
+    }
+    return 0;
+}
+int NumeroPerfecto(int n) {
+	int suma,i;
+	suma = 0;
+    for(i = 1; i < n; i++) {
+        if (n % i == 0) {
+            suma = suma + i;
+            cout << i << " ";
+        }
+    }
+    suma = n;
+    return n;
+}
