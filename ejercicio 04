@@ -16,12 +16,14 @@ int main() {
 int NumeroPerfecto(int n) {
 	int suma,i;
 	suma = 0;
+        cout << "Divisores propios de " << n << ": ";
     for(i = 1; i < n; i++) {
         if (n % i == 0) {
             suma = suma + i;
             cout << i << " ";
         }
     }
+    cout << endl;
     suma = n;
     return n;
 }
